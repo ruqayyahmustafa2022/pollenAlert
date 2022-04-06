@@ -1,4 +1,5 @@
 package com.detroitlabs.pollenAlert.Controller;
+import com.detroitlabs.pollenAlert.Data.Cities;
 import com.detroitlabs.pollenAlert.Data.PollenData;
 import com.detroitlabs.pollenAlert.Data.WeatherData;
 import com.detroitlabs.pollenAlert.Service.apiAccess;
@@ -28,6 +29,8 @@ public class appController {
         String dateToday = test.getData().get(0).getTypes().getGrass().getIndex().getCategory();
         return "Today's Date is " + dateToday;
     }//end method helloWorld
+
+
 
 
 
