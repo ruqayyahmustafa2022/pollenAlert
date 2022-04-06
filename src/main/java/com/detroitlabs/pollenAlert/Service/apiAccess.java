@@ -10,7 +10,7 @@ public class apiAccess {
 
     public WeatherData accessWeatherData(){
         RestTemplate restTemplate = new RestTemplate();
-        return restTemplate.getForObject(" ", WeatherData.class);
+        return restTemplate.getForObject("https://api.breezometer.com/weather/v1/forecast/daily?lat=30.695366&lon=-88.039894&key=4873efe5bf9348eeb074675d2accf60a&days=3 ", WeatherData.class);
     }
 
     public PollenData accessPollenData(){

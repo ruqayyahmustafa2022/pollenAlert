@@ -8,22 +8,25 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 
 public class PollenData {
-    private String date;
-    private String types;
+    private List<Data> data;
+    private String metadata;
 
-    public String getDate() {
-        return date;
-    }
-    @JsonProperty
-    public void setDate(String date) {
-        this.date = date;
+    public List<Data> getData() {
+        return data;
     }
 
-    public String getTypes() {
-        return types;
+    public void setData(List<Data> data) {
+        this.data = data;
     }
-    @JsonProperty
-    public void setTypes(String types) {
-        this.types = types;
+
+    public String getMetadata() {
+        return metadata;
     }
-}
+
+    public void setMetadata(String metadata) {
+        this.metadata = metadata;
+    }
+
+
+
+}//end PollenData
